@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Pokedex from "./Pokedex";
 import reportWebVitals from "./reportWebVitals";
 import poke from "./pokeExample";
+// import Pokedex from "./components/Pokedex/Pokedex";
+import App from "./App";
+
+console.log(process.env);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Pokedex pokemon={poke} />
+    <App />
+    {/* <Pokedex pokemon={poke} /> */}
   </React.StrictMode>
 );
 
